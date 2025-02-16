@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    color: #d9d9d9;
+    font-size: 20px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
+    background-image: url(/str/img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 109%;
+    letter-spacing: -0.03em;
+    background: linear-gradient(223deg, #722323 0%, #c63535 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.header__nav {
+    font-weight: 400;
+    font-size: 15px;
+    color: #d9d9d9;
+}
+
+.header__link {
+    text-decoration: none;
+    padding-right: 50px;
+    color: white;
+}
+
+
+.main {
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.welcome {
+    margin-bottom: 250px;
+}
+
+.welcome__desc {
+    max-width: 574px;
+}
+
+.welcome .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 109%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.title span {
+    background: linear-gradient(223deg, #722323 0%, #c63535 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcome__title {
+    margin-bottom: 55px;
+}
+
+.welcome__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
+    color: #d9d9d9;
+    margin-bottom: 55px;
+}
+
+.welcome__btns-wrapper {
+
+}
+
+.btn {
+    padding: 20px 80px;
+    border-radius: 83px;
+    background: linear-gradient(210deg, #722323 0%, #c63535 100%);
+    font-weight: 639;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.link {
+    padding: 20px 55px;
+    border: 1.02px solid #dadada;
+    border-radius: 83px;
+    background: #121517;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.03em;
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.welcome__img-wrapper {
+
+}
+
+.welcome__image {
+    width: 460px;
+}
+
+/* блок о стримере */
+
+.earnings {
+    font-size: 20px;
+    color: #e50000;  /* Red color for emphasis */
+    margin-bottom: 20px;
+}
+
+.tour__pic {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.tours__tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.tour__title{
+    display: inline;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+
+.tour__desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+
+/* Конец блока о стримере */
+
+/* начало блока с курсами */
+
+
+.service-slider {
+    width: 80%;
+    max-width: 1280px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(210deg, #00363f 0%, #0c0b1f 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    padding: 20px;
+    background: linear-gradient(210deg, #00363f 0%, #0c0b1f 100%);
+    border-radius: 8px;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.slide h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* конец блока с курсами */
+
+/* начало блока что включает */
+
+.lesson-list-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(210deg, #00363f 0%, #0c0b1f 100%);
+    border-radius: 30px;
+    margin-bottom: 200px;
+}
+
+.lesson-list-container h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lesson-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lesson-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.expand-btn {
+    background-color: #632d2d;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
+
+.expand-btn:hover {
+    background-color: #5e2a2a;
+}
+
+.nested {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.nested li {
+    font-size: 16px;
+}
+
+/* конец блока что включает */
+
+/*Начало блока отзывов*/
+
+.gallery-container {
+    width: 80%;
+    max-width: 1230px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    color: #555;
+}
+
+.gallery-item:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.gallery-item:hover p {
+    color: #000;
+}
+
+.image__link:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/*Конец блока отзывов*/
+
+/* начало подвала сайта */
+
+.welcome__btns-wrapper2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.end__title {
+    display: flex;
+    justify-content: center;
+}
+
+.end__title span {
+    background: linear-gradient(223deg, #722323 0%, #c63535 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* конец подвала сайта */
