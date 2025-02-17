@@ -25,3 +25,30 @@ function updateSlider() {
         slides[i].style.transform = `translateX(${offset}%)`;
     }
 }
+
+var menuText = "Menu";
+
+$(
+  function(){
+    $("body").addClass("js");
+
+    $(".menu_main").prepend("<a href='#' class='link_nav'>"+ menuText +"</a>");
+    
+    $(".menu_main li:has(ul)").addClass("menu_parent");
+    
+    $(".link_nav").click(
+      function(){
+        $(".menu_main > ul").toggleClass("menu_expanded");
+        $(this).toggleClass("menu_parent_exp");
+        return false;
+      }
+    )
+    $(".menu_parent").click(
+      function(){
+        $(this).find(">ul").toggleClass("menu_expanded");
+        $(this).toggleClass("menu_parent_exp");
+        return false;
+      }
+    )    
+  }
+)
