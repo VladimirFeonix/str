@@ -1,0 +1,102 @@
+/* Global styles remain unchanged */
+
+/* Mobile Devices - Adjustments for small screens (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .header__nav {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__link {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .welcome__desc {
+        max-width: 100%;
+    }
+
+    .welcome__image {
+        width: 80%;
+    }
+
+    .tours__tour {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .service-slider {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .slider-container {
+        display: block;
+    }
+
+    .lesson-list-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablets - Adjustments for medium screens (min-width: 768px and max-width: 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header .container {
+        gap: 40px;
+    }
+
+    .tours__tour {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .service-slider {
+        width: 90%;
+    }
+
+    .lesson-list-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Large Screens - Desktop (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service-slider {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .lesson-list-container {
+        max-width: 900px;
+        padding: 40px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
